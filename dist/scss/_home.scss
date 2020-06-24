@@ -1,0 +1,476 @@
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/dist/img/bg1.jpg);
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .logo {
+       padding: 30px;
+       text-align: center;
+        h1,span{
+            font-size: 4rem;
+            display: inline;
+        }
+        span{
+            color: $red-color;
+        }
+    }
+
+    nav {
+        text-align: center;
+        //position: fixed;
+        
+       
+        li{
+            display: inline-block;
+            margin-right: 3rem;
+        }
+        
+        a{
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            color: $text-color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .active{
+            color: white;
+            border-bottom: 3px solid $red-color;
+        }
+    }
+
+    .text-lead{
+        text-align: center;
+        width: 70%;
+        margin: 70px auto;
+        h1{
+            font-size: 6rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+    }
+}
+//--------content---------
+.history{
+    display: flex;
+    margin: 70px 0;
+
+    .img-history{
+        flex: 1.5;
+    
+        img{
+            max-width: 800px;
+            width: 680px;
+            height: auto;
+        }
+    }
+
+    .history-content{
+        flex: 1;
+       
+        
+        .h1-title{
+           @include h1-title;
+
+        }
+
+        p{
+            @include textP;
+        }
+
+        .btn-history{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: 12px 25px;
+            background: rgb(29,29,29);
+            border: 2px solid $red-color;
+            color: #fff;
+            margin: 30px 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+            @include transition;
+
+            &:hover{
+                background: $red-color;
+            }
+        }
+    }
+    
+}
+
+.todays-menu{
+
+    .text-menu{
+        margin: 200px 0;
+
+        .title{
+            @include h1-title;
+        }
+
+        p{
+            @include textP;
+            width: 60%;
+            
+        }
+    }
+    
+   
+
+    .menu-item{
+        display: flex;
+        margin: 130px 0;
+
+        .menu-content{
+
+            img{
+                max-width: 500px;
+                width: 250px;
+                height: 166px;
+            }
+        }
+
+        .menu-title{
+            font-size: 2.7rem;
+            font-family: 'Cormorant Garamond', serif;
+            margin: 30px 0 10px 0 ;
+        }
+
+        span{
+            font-size: 3rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: $price-color;
+            font-weight: bold;
+        
+
+        }
+
+        p{
+            @include textP;
+            margin: 20px 0;
+        }
+
+        .drop{
+            margin-top: 150px;
+        }
+
+    }
+   
+}
+
+.testimony{
+
+    .text-menu{
+        margin: 200px 0;
+
+        .title{
+            @include h1-title;
+        }
+
+        p{
+            @include textP;
+            width: 60%;
+            
+        }
+    }
+
+    .quote{
+        position: relative;
+
+        .img-quote{
+            display: flex;
+            position: relative;
+
+            img{
+                max-width: 800px;
+                height: auto;
+                filter: contrast(50%);
+            }
+    
+            p{
+                font-size: 4rem;
+                font-family: 'Cormorant Garamond', serif;
+                font-style: italic;
+                width: 60%;
+                position: absolute;
+                margin: 100px 0 0 400px;
+               
+            }
+            span{
+                color: rgba(255, 255, 255, 0.521);
+                
+            }    
+        }
+        
+    }
+}
+.best-menu{
+    display: flex;
+    margin: 200px auto;
+
+    .text-menu{
+        
+
+        .title{
+            @include h1-title;
+        }
+        p{
+            @include textP;
+            width: 60%;
+        }
+
+        .menu-item-content{
+            margin-left: 60px ;
+            width: 100%;
+
+            .title-item{
+                font-size: 3rem;
+                font-family: 'Cormorant Garamond', serif;
+            }
+
+            p{
+                @include textP;
+                margin: 20px 0;
+
+
+            }
+
+            .btn-menu{
+                padding: 15px 25px;
+                margin: 50px 0;
+                background:  rgb(29,29,29);
+                font-size: 1.3rem;
+                border: 2px solid $red-color;
+                color: $text-color1;
+                text-transform: uppercase;
+                cursor: pointer;
+                @include transition;
+
+
+                &:hover{
+                    background: $red-color;
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+
+    .menu-item-img{
+        margin-right: -120px;
+
+        .img-link{
+            max-width: 1200px;
+            width: 700px;
+            height: auto;
+        }
+    }
+
+    
+   
+}
+.event{
+    text-align: center;
+   
+    
+    .event-text{
+        
+
+        .h1-title{
+            @include h1-title;
+        }
+        p{
+           @include textP;
+           margin: 0 auto;
+            text-align: center ;
+        }
+    }
+
+    .event-grid{
+        margin: 150px auto;
+        display: flex;
+        font-family: 'Cormorant Garamond', serif;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+
+        .event-grid-item{
+            width: 330px;
+            height: auto;
+            margin-right: 25px;
+            background: rgb(38,38,38);
+            overflow: hidden;
+
+
+            .title-grid{
+                font-size: 2.4rem;
+                text-align: left;
+                margin: 30px 20px;
+                cursor: pointer;
+            }
+
+            .text-grid{
+                font-size: 1.6rem;
+                color: $text-color1;
+                text-align: left;
+                margin: 0 20px;
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                @include transition;
+
+                &:hover{
+                   transform: scale(1.06);
+                }
+
+            }
+
+            .like-stuff{
+                margin: 60px 20px 30px 20px;
+                display: inline-flex;
+                text-align: left;
+
+                .stuff-item{
+                    font-size: 1.6rem;
+                    text-align: left;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    &:last-child{
+                        margin-left: 30px;
+                        
+                        text-transform: capitalize;
+                        color: $red-color;
+                    }
+                }
+
+                .fa{
+                    margin-right: 10px;
+                    color: #fff;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+.book-table{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/dist/img/bg1.jpg) ;
+    background-attachment: fixed;
+    padding: 100px 0;
+
+    .title{
+        @include h1-title;
+
+    }
+
+    .text-table{
+       font-size: 2rem;
+       font-family: 'Cormorant Garamond', serif;
+       color: $text-color1;
+       margin: 50px auto;
+       width: 56%;
+    }
+
+    .btn-book{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding: 12px 25px;
+        background: transparent;
+        border: 2px solid $red-color;
+        color: #fff;
+        margin: 30px 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+        @include transition;
+
+        &:hover{
+            background: $red-color;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: 'Cormorant Garamond', serif;
+
+    .about{
+        flex: 2;
+
+        .title{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+
+        }
+
+        p{
+            width: 80%;
+            font-size: 1.6rem;
+            color: $text-color1;
+            margin:10px 0 ;
+
+        }
+    }
+
+    .links{
+        flex: 1;
+
+        .title{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+
+        }
+
+       li{
+           margin: 10px 0;
+
+           a{
+               font-size: 1.6rem;
+               color: $text-color1;
+               text-transform: capitalize;
+               cursor: pointer;
+               font-weight: bold;
+               @include transition;
+
+               &:hover{
+                   color: #fff;
+               }
+           }
+       }
+
+       
+    }
+}
+
+.copyright{
+    text-align: center;
+    margin-bottom: 70px;
+
+    p{
+        font-size: 1.6rem;
+        color: $text-color1;
+        font-family: 'Cormorant Garamond', serif;;
+    }
+
+    i{
+        font-size: 2.5rem;
+        margin: 20px 5px;
+        cursor: pointer;
+        @include transition;
+
+        &:hover{
+            color: $red-color;
+        }
+    }
+    
+}

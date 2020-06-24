@@ -1,0 +1,33 @@
+$text-color: #fff;
+$text-color1:rgb(160,160,160);
+$red-color:rgb(234,39,45);
+$price-color:rgb(241,220,83);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 70px auto;
+}
+
+@mixin transition {
+    transition: 0.3s all ease;
+}
+
+@mixin h1-title {
+        font-size: 4rem;
+        font-family: 'Satisfy', cursive;
+
+}
+
+@mixin textP {
+    font-size: 1.7rem;
+    color: $text-color1;
+    width: 80%;
+    line-height: 2.3rem;
+    font-family: 'Cormorant Garamond', serif;
+} 
