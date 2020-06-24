@@ -6,7 +6,8 @@
 
 .container {
   width: 80%;
-  margin: 70px auto; }
+  margin: 70px auto;
+  overflow: hidden; }
 
 header {
   width: 100%;
@@ -25,35 +26,51 @@ header {
     header .logo span {
       color: #ea272d; }
   header nav {
-    text-align: center; }
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    text-align: center;
+    z-index: 99; }
+    header nav ul {
+      text-align: center; }
     header nav li {
-      display: inline-block;
-      margin-right: 3rem; }
+      display: inline-block; }
     header nav a {
       font-size: 1.7rem;
       text-transform: uppercase;
       color: #a0a0a0;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      padding: 12px 15px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+      header nav a:hover {
+        background: #191919;
+        color: #fff;
+        padding: 12px 15px;
+        border-bottom: 3px solid #ea272d; }
     header nav .active {
       color: white;
       border-bottom: 3px solid #ea272d; }
   header .text-lead {
     text-align: center;
     width: 70%;
-    margin: 70px auto; }
+    margin: 170px auto; }
     header .text-lead h1 {
-      font-size: 6rem;
+      font-size: 8rem;
       font-family: 'Cormorant Garamond', serif; }
 
 .history {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 70px 0; }
+  margin: 80px auto; }
   .history .img-history {
     -webkit-box-flex: 1.5;
         -ms-flex: 1.5;
-            flex: 1.5; }
+            flex: 1.5;
+    margin-left: 15px; }
     .history .img-history img {
       max-width: 800px;
       width: 680px;
@@ -100,14 +117,19 @@ header {
     width: 60%; }
 
 .todays-menu .menu-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 130px 0; }
-  .todays-menu .menu-item .menu-content img {
-    max-width: 500px;
-    width: 250px;
-    height: 166px; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .todays-menu .menu-item .menu-content {
+    width: 280px;
+    height: auto; }
+    .todays-menu .menu-item .menu-content img {
+      max-width: 500px;
+      width: 250px;
+      height: 166px; }
   .todays-menu .menu-item .menu-title {
     font-size: 2.7rem;
     font-family: 'Cormorant Garamond', serif;
@@ -313,6 +335,9 @@ header {
     .book-table .btn-book:hover {
       background: #ea272d; }
 
+.dua {
+  margin-top: -100px; }
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,7 +376,7 @@ header {
         -webkit-transition: 0.3s all ease;
         transition: 0.3s all ease; }
         .footer .links li a:hover {
-          color: #fff; }
+          color: #ea272d; }
 
 .copyright {
   text-align: center;

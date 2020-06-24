@@ -1,0 +1,76 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: 'Cormorant Garamond', serif;
+
+    .about{
+        flex: 2;
+
+        .title{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+
+        }
+
+        p{
+            width: 80%;
+            font-size: 1.6rem;
+            color: $text-color1;
+            margin:10px 0 ;
+
+        }
+    }
+
+    .links{
+        flex: 1;
+
+        .title{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+
+        }
+
+       li{
+           margin: 10px 0;
+
+           a{
+               font-size: 1.6rem;
+               color: $text-color1;
+               text-transform: capitalize;
+               cursor: pointer;
+               font-weight: bold;
+               @include transition;
+
+               &:hover{
+                   color: $red-color;
+               }
+           }
+       }
+
+       
+    }
+}
+
+.copyright{
+    text-align: center;
+    margin-bottom: 70px;
+
+    p{
+        font-size: 1.6rem;
+        color: $text-color1;
+        font-family: 'Cormorant Garamond', serif;;
+    }
+
+    i{
+        font-size: 2.5rem;
+        margin: 20px 5px;
+        cursor: pointer;
+        @include transition;
+
+        &:hover{
+            color: $red-color;
+        }
+    }
+    
+}

@@ -12,6 +12,7 @@ $price-color:rgb(241,220,83);
 .container{
     width: 80%;
     margin: 70px auto;
+    overflow: hidden;
 }
 
 @mixin transition {
