@@ -163,7 +163,8 @@ header {
     width: 60%; }
 
 .testimony .quote {
-  position: relative; }
+  position: relative;
+  margin: 100px auto; }
   .testimony .quote .img-quote {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,6 +338,51 @@ header {
 
 .dua {
   margin-top: -100px; }
+
+.form {
+  max-width: 600px;
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  float: right;
+  border: 3px solid #262626; }
+  .form input[type=text], .form input[type=datetime-local], .form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #a0a0a0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    background: #1d1d1d;
+    color: #fff;
+    font-family: 'Satisfy', cursive; }
+    .form input[type=text]:focus, .form input[type=datetime-local]:focus, .form select:focus {
+      border: 2px solid #fff; }
+  .form label {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    margin: 10px 0;
+    line-height: 2;
+    letter-spacing: 2px; }
+  .form .btn-submit {
+    padding: 15px 35px;
+    margin: 10px 0;
+    background: #1d1d1d;
+    font-size: 1.6rem;
+    border: 2px solid #ea272d;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .form .btn-submit:hover {
+      background: #ea272d;
+      color: #fff; }
 
 .footer {
   display: -webkit-box;
