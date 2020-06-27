@@ -32,3 +32,9 @@ $price-color:rgb(241,220,83);
     line-height: 2.3rem;
     font-family: 'Cormorant Garamond', serif;
 } 
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
