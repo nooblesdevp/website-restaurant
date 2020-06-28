@@ -8,21 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <title>Web Coffe </title>
 </head>
 <body>
     <header>
         <div class="logo">
             <h1>Tasty</h1><span>.</span>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
         <nav id="navbar">
             <ul class="menu-item">
                 <li class="menu-link"><a class="active" href="index.html">Home</a></li>
                 <li class="menu-link"><a href="menu.html">menu</a></li>
-                <li class="menu-link"><a href="">gallery</a></li>
+                <li class="menu-link"><a href="galery.html">gallery</a></li>
                 <li class="menu-link"><a href="reservation.html">reservation</a></li>
-                <li class="menu-link"><a href="http://">about</a></li>
-                <li class="menu-link"><a href="http://">contact</a></li>
+                <li class="menu-link"><a href="about.html">about</a></li>
+                <li class="menu-link"><a href="contact.html">contact</a></li>
             </ul>
         </nav>
         <div class="text-lead">
@@ -51,38 +57,42 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum similique dolorem aliquam. Ipsa harum dolore alias quisquam error, temporibus fugiat illum ducimus, tempore sequi blanditiis. Animi recusandae a expedita voluptas reiciendis voluptatum esse nemo est excepturi aspernatur ut voluptatem laudantium tempore facilis numquam cum, quasi voluptatibus ea deleniti! At, molestiae?</p>
         </div>
         <div class="menu-item">
-            <div class="menu-content">
-                <img src="/dist/img/img2.jpg" alt="">
-                <h3 class="menu-title">Pizza Hot Plate</h3>
-                <span class="price">
-                    $20 <sup>.50</sup>
-                </span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
-            </div>
-            <div class="menu-content drop">
-            <img src="/dist/img/img3.jpg" alt="">
-            <h3 class="menu-title">Burger double Cheese</h3>
-            <span class="price">
-                $19 <sup>.00</sup>
-            </span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
-        </div>
-        <div class="menu-content">
-            <img src="/dist/img/img4.jpg" alt="">
-            <h3 class="menu-title">italian sauce mushroom </h3>
-            <span class="price">
-                $20 <sup>.50</sup>
-            </span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
-        </div>
-        <div class="menu-content drop">
-            <img src="/dist/img/img4.jpg" alt="">
-            <h3 class="menu-title">Fried Potato w/ Garlie </h3>
-            <span class="price">
-                $20 <sup>.50</sup>
-            </span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
-        </div>
+           <div class="menu-item1">
+                <div class="menu-content">
+                    <img src="/dist/img/img2.jpg" alt="">
+                    <h3 class="menu-title">Pizza Hot Plate</h3>
+                    <span class="price">
+                        $20 <sup>.50</sup>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
+                </div>
+                <div class="menu-content drop">
+                    <img src="/dist/img/img3.jpg" alt="">
+                    <h3 class="menu-title">Burger double Cheese</h3>
+                    <span class="price">
+                        $19 <sup>.00</sup>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
+                </div>
+           </div>
+           <div class="menu-item2">
+                <div class="menu-content">
+                    <img src="/dist/img/img4.jpg" alt="">
+                    <h3 class="menu-title">italian sauce mushroom </h3>
+                    <span class="price">
+                        $20 <sup>.50</sup>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
+                </div>
+                <div class="menu-content drop">
+                    <img src="/dist/img/img4.jpg" alt="">
+                    <h3 class="menu-title">Fried Potato w/ Garlie </h3>
+                    <span class="price">
+                        $20 <sup>.50</sup>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi quas quisquam veritatis architecto sequi reiciendis rerum hic iste voluptatum.</p>
+                </div>
+           </div>
         </div>
     </div>
     <div class="container testimony">
@@ -204,6 +214,9 @@
    </div>
   </section>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
   <script src="/dist/js/main.js"></script>
 </body>
 </html>

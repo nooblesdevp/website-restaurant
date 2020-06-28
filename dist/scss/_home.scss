@@ -54,6 +54,7 @@
 
         .title{
             @include h1-title;
+            text-transform: capitalize;
         }
 
         p{
@@ -66,19 +67,19 @@
    
 
     .menu-item{
-        display: inline-flex;
+        display: flex;
         //margin: 130px 0;
         justify-content: space-evenly;
         
 
         .menu-content{
-            width: 280px;
+            width: 250px;
             height: auto;
+            margin: 10px;
 
             img{
-                max-width: 500px;
-                width: 250px;
-                height: 166px;
+               width: 100%;
+            
             }
         }
 
