@@ -38,3 +38,9 @@ $price-color:rgb(241,220,83);
         @content;
     }
 }
+
+@mixin media-small {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
