@@ -16,9 +16,9 @@
     .burger{
         float: right;
     }
-    .menu-item{
-       visibility: hidden;
-    }
+    .navbar{
+        visibility: hidden !important;
+     }
 
     .text-lead{
         h1{
@@ -185,4 +185,28 @@
         }
     
    }
+}
+
+@include media-xsmall{
+    .img-history{
+        img{
+            width: 230px !important;
+        }
+    }
+
+    .img-quote{
+        img{
+            width: 260px !important;
+        }
+    }
+
+    .img-link{
+        width: 260px !important;
+    }
+
+    .event-grid-item{
+        img{
+            width: 260px !important;
+        }
+    }
 }
