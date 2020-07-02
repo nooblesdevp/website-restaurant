@@ -73,7 +73,7 @@
         
 
         .menu-content{
-            width: 250px;
+            width: 350px;
             height: auto;
             margin: 10px;
 
@@ -101,6 +101,7 @@
         p{
             @include textP;
             margin: 20px 0;
+            width: 100% !important;
         }
 
         .drop{
