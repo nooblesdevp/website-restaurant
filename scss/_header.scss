@@ -5,6 +5,7 @@ header{
     background-position: center ;
     background-size: cover;
     background-attachment: fixed;
+    position: relative !important;
 
     .logo {
        padding: 30px;
@@ -65,14 +66,6 @@ header{
             border-bottom: 3px solid $red-color;
         }
     }
-
-    // .navbar{
-    //     transition: background-color 0.5s ease;
-    //     background-color: #f8f8f8;
-    //  }
-    //  .navbar.shrink{ 
-    //     background: #dddddd 
-    //  }
 
     .text-lead{
         text-align: center;
