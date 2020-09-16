@@ -50,3 +50,14 @@ $price-color:rgb(241,220,83);
         @content;
     }
 }
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
